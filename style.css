@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, #bd2cbd, #4343d6); }
+
+.forms {
+  background-color: white;
+  width: 273px;
+  height: 280px;
+  margin-top: 240px;
+  box-shadow: 9px 0 40px beige; }
+  .forms h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 80; }
+  .forms input {
+    margin-top: 5px;
+    width: 230px;
+    height: 30px;
+    border-bottom: 1px solid #3b3a3a;
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    outline: none; }
+    .forms input:hover {
+      border-bottom: 1.4px solid dodgerblue; }
+    .forms input:focus {
+      width: 243px;
+      border-bottom: 1.6px solid blue;
+      transition: width 0.2s ease;
+      transform: scale(1.01); }
+  .forms input::after {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1.6px solid dodgerblue;
+    transform: translateX(0); }
+  .forms input:focus::after {
+    transform: translateX(1); }
+  .forms .submit {
+    margin-top: 16px;
+    width: 100px;
+    height: 33px;
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, dodgerblue, blue); }
+    .forms .submit:hover {
+      transform: rotate(360deg);
+      transition: transform 0.6s ease; }
+    .forms .submit:focus {
+      transform: scale(0.94);
+      transition: transform 0.4s ease; }
+
+.forms:hover {
+  box-shadow: 7px 0 30px beige; }
+
+/*# sourceMappingURL=style.css.map */
